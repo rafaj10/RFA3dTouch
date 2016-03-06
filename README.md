@@ -1,14 +1,10 @@
-![RFA3dTouch - 3D Touch for all](https://)
-<br />
-<br />
-<br />
 A **Swift** based reimplementation of the Apple 3D Touch.
 <br />
 <br />
 ## Features
 ...
 
-![RFA3dTouch.gif](https://...)
+![RFA3dTouch.gif](https://dl.dropboxusercontent.com/u/30253301/screen_3d.png)
 
 ## How To
 
