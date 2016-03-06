@@ -7,8 +7,22 @@ A **Swift** based reimplementation of the Apple 3D Touch.
 ![RFA3dTouch.gif](https://dl.dropboxusercontent.com/u/30253301/screen_3d.png)
 
 ## How To
+First you need to add the framework to your project. The recommended way is to use CocoaPods.
+```ruby
+pod "RFA3dTouch"
+```
 
-...
+After adding the framework to your project, you need to import the module
+```swift
+import RFA3dTouch
+```
+
+Usage:
+```swift
+		let 3dtouchInterface = 3dtouchInterface.instance() // take care datasource and delegate
+        3dtouch = RFA3dTouch.instance(touchMenuInterface)
+        3dtouch.showMenu(RFA3dTouch.takeSnap(sender), point: RFA3dTouch.absolutePosition(sender.superview!, view: sender))
+```
 
 ## Customization
 
