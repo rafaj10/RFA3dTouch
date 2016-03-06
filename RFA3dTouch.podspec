@@ -8,8 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "9.1"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/rafaj10/RFA3dTouch.git", tag: "v#{spec.version}", submodules: true }
+  spec.source = { :git => 'https://github.com/rafaj10/RFA3dTouch.git', :tag => "#{spec.version}", :submodules => true }
   spec.source_files = "RFA3dTouch/**/*.{h,swift}"
-
   spec.dependency "Curry", "~> 1.4.0"
 end
