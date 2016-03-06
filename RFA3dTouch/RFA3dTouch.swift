@@ -19,7 +19,7 @@ public protocol RFA3dTouchDelegate {
     func RFA3dTouchSelectItemForRow(row: NSInteger)
 }
 
-class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
+public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
     
     var datasource: RFA3dTouchDataSource?
     var delegate: RFA3dTouchDelegate?
