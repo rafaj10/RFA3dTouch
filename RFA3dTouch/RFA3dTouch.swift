@@ -149,16 +149,16 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
         return CGSizeMake(tableWidth, tableHeight)
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return cell_height
     }
-    
-    func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int
+   
+    public func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
         return self.datasource == nil ? 0 : self.datasource!.RFA3dTouchNumberOfRows()
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")!
         
@@ -184,7 +184,7 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.delegate!.RFA3dTouchSelectItemForRow(indexPath.row)
         dismiss()
     }
