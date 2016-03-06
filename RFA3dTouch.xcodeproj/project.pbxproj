@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		05E7D5621C8C5D27000B0915 /* RFA3dTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E7D5611C8C5D27000B0915 /* RFA3dTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E7D56A1C8C6189000B0915 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E7D5691C8C6189000B0915 /* Curry.framework */; };
-		05E7D56C1C8C67BC000B0915 /* RFA3dTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7D56B1C8C67BC000B0915 /* RFA3dTouch.swift */; };
+		05E7D56E1C8C6B06000B0915 /* RFA3dTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E7D56D1C8C6B06000B0915 /* RFA3dTouch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +17,7 @@
 		05E7D5611C8C5D27000B0915 /* RFA3dTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFA3dTouch.h; sourceTree = "<group>"; };
 		05E7D5631C8C5D27000B0915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E7D5691C8C6189000B0915 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
-		05E7D56B1C8C67BC000B0915 /* RFA3dTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFA3dTouch.swift; sourceTree = "<group>"; };
+		05E7D56D1C8C6B06000B0915 /* RFA3dTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFA3dTouch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,6 @@
 		05E7D5541C8C5D27000B0915 = {
 			isa = PBXGroup;
 			children = (
-				05E7D56B1C8C67BC000B0915 /* RFA3dTouch.swift */,
 				05E7D5691C8C6189000B0915 /* Curry.framework */,
 				05E7D5601C8C5D27000B0915 /* RFA3dTouch */,
 				05E7D55F1C8C5D27000B0915 /* Products */,
@@ -54,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				05E7D5611C8C5D27000B0915 /* RFA3dTouch.h */,
+				05E7D56D1C8C6B06000B0915 /* RFA3dTouch.swift */,
 				05E7D5631C8C5D27000B0915 /* Info.plist */,
 			);
 			path = RFA3dTouch;
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05E7D56C1C8C67BC000B0915 /* RFA3dTouch.swift in Sources */,
+				05E7D56E1C8C6B06000B0915 /* RFA3dTouch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
