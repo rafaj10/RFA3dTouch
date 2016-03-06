@@ -29,7 +29,7 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
     
     let cell_height : CGFloat = 60.0
     
-    class func instance(interface: AnyObject) -> RFA3dTouch {
+    public class func instance(interface: AnyObject) -> RFA3dTouch {
         let window = UIApplication.sharedApplication().delegate?.window!!
         let view = RFA3dTouch(frame: (window?.bounds)!)
         view.datasource = interface as? RFA3dTouchDataSource
@@ -38,7 +38,7 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
         return view
     }
     
-    func showMenu(sender : UIView, point: CGPoint) {
+    public func showMenu(sender : UIView, point: CGPoint) {
         
         if datasource?.RFA3dTouchNumberOfRows() == 0 {
             return
@@ -73,13 +73,13 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
             }, completion: { finished in })
     }
     
-    class func absolutePosition (superView: AnyObject, view: AnyObject) -> CGPoint {
+    public class func absolutePosition (superView: AnyObject, view: AnyObject) -> CGPoint {
         let window = UIApplication.sharedApplication().delegate?.window!!
         let frame = superView.convertRect(view.frame, toView: window)
         return frame.origin
     }
     
-    class func takeSnap (view: AnyObject) -> UIView {
+    public class func takeSnap (view: AnyObject) -> UIView {
         let viewSnap = view.resizableSnapshotViewFromRect(view.bounds, afterScreenUpdates: false, withCapInsets: UIEdgeInsetsZero)
         return viewSnap
     }
@@ -88,7 +88,7 @@ public class RFA3dTouch: UIView, UITableViewDelegate, UITableViewDataSource {
         self.dismiss()
     }
     
-    func dismiss() {
+    public func dismiss() {
         UIView.animateWithDuration(0.4, delay: 0, options: .CurveEaseInOut, animations: {
             self.contentView.alpha = 0
             self.tableView.alpha = 0 }, completion: { finished in
