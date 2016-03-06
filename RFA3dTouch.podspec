@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "RFA3dTouch"
-  spec.version = "1.0.1"
+  spec.version = "1.0.3"
   spec.summary = "3dTouch for all."
   spec.homepage = "https://github.com/rafaj10"
   spec.license = { type: 'MIT', file: 'LICENSE' }
