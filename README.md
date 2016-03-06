@@ -19,22 +19,22 @@ import RFA3dTouch
 
 Usage:
 ```swift
-        3dtouch = RFA3dTouch.instance(self) //self should implement TouchMenuListDataSource, TouchMenuListDelegate
-        3dtouch.showMenu(RFA3dTouch.takeSnap(sender), point: RFA3dTouch.absolutePosition(sender.superview!, view: sender))
+    3dtouch = RFA3dTouch.instance(self) //self should implement RFA3dTouchDataSource, RFA3dTouchDelegate
+    3dtouch.showMenu(RFA3dTouch.takeSnap(sender), point: RFA3dTouch.absolutePosition(sender.superview!, view: sender))
 ```
 
 Datasource:
 ```swift
-    func touchMenuListNumberOfRows() -> Int {
+    func RFA3dTouchNumberOfRows() -> Int {
         return self.someList.count
     }
     
-    func touchMenuListTitlePerRow(row: NSInteger) -> NSString {
+    func RFA3dTouchTitlePerRow(row: NSInteger) -> NSString {
         let model = self.someList[row] as SomeModel
         return model.name
     }
     
-    func touchMenuListIconPerRow(row: NSInteger) -> NSString {
+    func RFA3dTouchIconPerRow(row: NSInteger) -> NSString {
         let model = self.someList[row] as SomeModel
         return model.icon
     }
@@ -42,7 +42,7 @@ Datasource:
 
 Delegate:
 ```swift
-        func touchMenuListDidSelectItemForRow(row: NSInteger)
+    func RFA3dTouchDidSelectItemForRow(row: NSInteger)
 ```
 
 ## Customization
