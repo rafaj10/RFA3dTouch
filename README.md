@@ -19,9 +19,30 @@ import RFA3dTouch
 
 Usage:
 ```swift
-		let 3dtouchInterface = 3dtouchInterface.instance() // take care datasource and delegate
-        3dtouch = RFA3dTouch.instance(touchMenuInterface)
+        3dtouch = RFA3dTouch.instance(self) //self should implement TouchMenuListDataSource, TouchMenuListDelegate
         3dtouch.showMenu(RFA3dTouch.takeSnap(sender), point: RFA3dTouch.absolutePosition(sender.superview!, view: sender))
+```
+
+Datasource:
+```swift
+    func touchMenuListNumberOfRows() -> Int {
+        return self.someList.count
+    }
+    
+    func touchMenuListTitlePerRow(row: NSInteger) -> NSString {
+        let model = self.someList[row] as SomeModel
+        return model.name
+    }
+    
+    func touchMenuListIconPerRow(row: NSInteger) -> NSString {
+        let model = self.someList[row] as SomeModel
+        return model.icon
+    }
+```
+
+Delegate:
+```swift
+        func touchMenuListDidSelectItemForRow(row: NSInteger)
 ```
 
 ## Customization
