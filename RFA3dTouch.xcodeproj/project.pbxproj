@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		05E7D5621C8C5D27000B0915 /* RFA3dTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E7D5611C8C5D27000B0915 /* RFA3dTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05E7D56A1C8C6189000B0915 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E7D5691C8C6189000B0915 /* Curry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05E7D55E1C8C5D27000B0915 /* RFA3dTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RFA3dTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E7D5611C8C5D27000B0915 /* RFA3dTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFA3dTouch.h; sourceTree = "<group>"; };
 		05E7D5631C8C5D27000B0915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E7D5691C8C6189000B0915 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E7D56A1C8C6189000B0915 /* Curry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,6 +33,7 @@
 		05E7D5541C8C5D27000B0915 = {
 			isa = PBXGroup;
 			children = (
+				05E7D5691C8C6189000B0915 /* Curry.framework */,
 				05E7D5601C8C5D27000B0915 /* RFA3dTouch */,
 				05E7D55F1C8C5D27000B0915 /* Products */,
 			);
@@ -232,6 +236,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RFA3dTouch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -248,6 +256,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Curry/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = RFA3dTouch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
